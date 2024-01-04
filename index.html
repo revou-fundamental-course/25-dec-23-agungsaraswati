@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="navigation-bar" >
+        <h1 id="logo"> Welcome to Katik</h1>
+    </header>
+    <div>
+        <h5 style="text-align:center;">Hello guys!, Welcome to Katik</h5>
+        <h5 style="text-align:center;">Web sederhana yang membantu kalian dalam menghitung nilai luas dan keliling bangun datar</h5>
+        <img class="tengah" src="segitiga.png">
+    <section class="input-luas-section"> 
+        
+        <!-- ini untuk luas -->
+        <label for="alas">Alas:</label>
+        <input type="number" id="alas" placeholder="Masukkan alas">
+        <label for="tinggi">Tinggi:</label>
+        <input type="number" id="tinggi" placeholder="Masukkan tinggi">
+        
+        
+        <br>
+        <!-- ini untuk keliling -->
+        <label for="sisi_a">Sisi A:</label>
+        <input type="number" id="sisi_a" placeholder="Masukkan sisi a">
+        <label for="sisi_b">Sisi B:</label>
+        <input type="number" id="sisi_b" placeholder="Masukkan sisi b">
+        <label for="sisi_c">Sisi C:</label>
+        <input type="number" id="sisi_c" placeholder="Masukkan sisi b">
+
+
+        <div class="buttons">
+            <button onclick="hitungLuas()">Hitung Luas</button>
+            <button onclick="hitungKeliling()">Hitung Keliling</button>
+            <button onclick="resetForm()">Reset</button>
+            <div id="hasil"></div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
